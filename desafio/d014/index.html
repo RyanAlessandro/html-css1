@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        caption{
+            padding: 10px;
+            border: 1px solid black;
+            border-bottom: none;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(0, 94, 5);
+            color: white;
+            font-weight: bold;
+            box-shadow: 1px 1px 10px black;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 1px 1px 10px black;
+        }
+
+        thead, .destaque{
+            background-color: rgb(0, 192, 0);
+            color: white;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .number {
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Desafio de Tabelas</h1>
+    <table>
+         <caption><strong>Notas dos Alunos</strong></caption>
+    <thead>
+        <tr>
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+        </tr>
+    </thead>
+        <tbody>
+
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td class="number">8.4</td>
+                <td class="number">4.6</td>
+                <td class="number">8.5</td>
+            </tr>
+
+            <tr>
+                <td>Física</td>
+                <td class="number">7.6</td>
+                <td class="number">9.2</td>
+                <td class="number">1.1</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td class="number">8.9</td>
+                <td class="number">3.9</td>
+                <td class="number">1.4</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td class="number">7.5</td>
+                <td class="number">3</td>
+                <td class="number">8.3</td>
+            </tr>
+
+            <tr class="destaque">
+                <th colspan="4" scope="row">Média de exatas</th>
+                <td class="number"><strong>8.9</strong></td>
+            </tr>
+
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Hitória</td>
+                <td class="number">6</td>
+                <td class="number">7.8</td>
+                <td class="number">4.0</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td class="number">9</td>
+                <td class="number">9.6</td>
+                <td class="number">7.4</td>
+            </tr>
+
+            <tr class="destaque">
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td class="number"><strong>7.4</strong></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
